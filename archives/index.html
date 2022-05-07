@@ -260,7 +260,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+    var bannerUrl = "/medias/banner/" + Math.round(Math.random()*6) + '.jpg';
     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 
@@ -397,7 +397,7 @@
                         <div class="card-content article-content">
                             <div class="summary block-with-text">
                                 
-                                    疫情之下，我们的未来将何去何从？
+                                    疫情之下，我们的未来将何去何从
                                 
                             </div>
                             <div class="publish-info">
@@ -421,6 +421,8 @@
                         <div class="card-action article-tags">
                             
                             <a href="/tags/%E5%8E%86%E5%8F%B2/"><span class="chip bg-color">历史</span></a>
+                            
+                            <a href="/tags/%E6%97%B6%E6%94%BF/"><span class="chip bg-color">时政</span></a>
                             
                         </div>
                         
@@ -599,6 +601,10 @@
 
 
 
+
+    <a href="https://twitter.com/4__rui" class="tooltipped" target="_blank" data-tooltip="关注我的Twitter: https://twitter.com/4__rui" data-position="top" data-delay="50">
+        <i class="fab fa-twitter"></i>
+    </a>
 
 
 

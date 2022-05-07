@@ -260,7 +260,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+    var bannerUrl = "/medias/banner/" + Math.round(Math.random()*6) + '.jpg';
     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 
@@ -522,6 +522,10 @@
 
 
 
+
+    <a href="https://twitter.com/4__rui" class="tooltipped" target="_blank" data-tooltip="关注我的Twitter: https://twitter.com/4__rui" data-position="top" data-delay="50">
+        <i class="fab fa-twitter"></i>
+    </a>
 
 
 

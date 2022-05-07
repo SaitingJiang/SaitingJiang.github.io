@@ -266,13 +266,6 @@
 
 <div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
     
-        <div id="prev-cover" class="left waves-effect carousel-control">
-            <i class="icon fa fa-angle-left"></i>
-        </div>
-        <div id="next-cover" class="right waves-effect carousel-control">
-            <i class="icon fa fa-angle-right"></i>
-        </div>
-    
 
     <div class="carousel-item  white-text bg-cover about-cover">
         <div class="container">
@@ -314,7 +307,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+    var bannerUrl = "/medias/banner/" + Math.round(Math.random()*6) + '.jpg';
     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 
@@ -325,6 +318,10 @@
                     <i class="fa fa-angle-double-down"></i>开始阅读
                 </a>
 
+                
+                    <a href="https://github.com/SaitingJiang" class="waves-effect waves-light btn" target="_blank">
+                        <i class="fab fa-github-alt"></i>Github
+                    </a>
                 
             </div>
             <div class="cover-social-link">
@@ -342,6 +339,10 @@
 
 
 
+    <a href="https://twitter.com/4__rui" class="tooltipped" target="_blank" data-tooltip="关注我的Twitter: https://twitter.com/4__rui" data-position="top" data-delay="50">
+        <i class="fab fa-twitter"></i>
+    </a>
+
 
 
     <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=946404750" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 946404750" data-position="top" data-delay="50">
@@ -358,33 +359,6 @@
         </div>
     </div>
 
-    
-        
-
-        
-            
-            <div class="carousel-item amber white-text carousel-post bg-cover"
-                 style="background-image: url('/medias/featureimages/16.jpg');">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s10 offset-s1">
-                            <div class="title center-align">明天会更好       吗？</div>
-                            <div class="description center-align">
-                                
-                                    疫情之下，我们的未来将何去何从？
-                                
-                            </div>
-                            <div class="cover-btns">
-                                <a href="/2022/05/07/ming-tian-hui-geng-hao-ma/" class="waves-effect waves-light btn"
-                                   target="_blank">
-                                    <i class="icon fa fa-eye fa-fw"></i>阅读更多
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
     
 </div>
 
@@ -515,7 +489,7 @@
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                疫情之下，我们的未来将何去何从？
+                                疫情之下，我们的未来将何去何从
                             
                         </div>
                         <div class="publish-info">
@@ -540,6 +514,10 @@
                         
                         <a href="/tags/%E5%8E%86%E5%8F%B2/">
                             <span class="chip bg-color">历史</span>
+                        </a>
+                        
+                        <a href="/tags/%E6%97%B6%E6%94%BF/">
+                            <span class="chip bg-color">时政</span>
                         </a>
                         
                     </div>
@@ -719,6 +697,10 @@
 
 
 
+
+    <a href="https://twitter.com/4__rui" class="tooltipped" target="_blank" data-tooltip="关注我的Twitter: https://twitter.com/4__rui" data-position="top" data-delay="50">
+        <i class="fab fa-twitter"></i>
+    </a>
 
 
 

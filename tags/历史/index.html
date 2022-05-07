@@ -260,7 +260,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+    var bannerUrl = "/medias/banner/" + Math.round(Math.random()*6) + '.jpg';
     $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
 </script>
 
@@ -289,6 +289,15 @@
                     </span>
                 </a>
                 
+                
+                <a href="/tags/%E6%97%B6%E6%94%BF/" title="时政: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="时政" style="background-color: #F5EEF8;">时政
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
     </div>
@@ -300,7 +309,7 @@
         <div class="row tags-posts">
             
             
-            <div class="article tag-post col s12 m6 l4" data-tags="历史" data-aos="fade-up">
+            <div class="article tag-post col s12 m6 l4" data-tags="历史, 时政" data-aos="fade-up">
                 <div class="card">
                     <a href="/2022/05/07/ming-tian-hui-geng-hao-ma/">
                         <div class="card-image tag-image">
@@ -501,6 +510,10 @@
 
 
 
+
+    <a href="https://twitter.com/4__rui" class="tooltipped" target="_blank" data-tooltip="关注我的Twitter: https://twitter.com/4__rui" data-position="top" data-delay="50">
+        <i class="fab fa-twitter"></i>
+    </a>
 
 
 
