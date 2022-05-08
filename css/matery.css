@@ -34,11 +34,12 @@
 }
 
 body {
-    background-color: #eaeaea;
+    background-color: 
     margin: 0;
     color: #34495e;
     overflow-x: hidden;
     overflow-y: auto;
+
 }
 
 h1 {
@@ -241,13 +242,14 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right,  #46A3FF 0%, #003D79 100%);
-    opacity: 0.8;
+    background-image: linear-gradient(to right,  #00FFFF  0%,  yellow 100%);
+    /*opacity: 0.8;*/
+    
 }
 
 .text-color {
     color: #0f9d58 !important;
-    
+     
 }
 
 .white-color {
@@ -259,7 +261,7 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #46A3FF 0%, #003D79 100%);
+    background: linear-gradient(to right, #FFFF00 0%, #00FFFF 33.3%, #8B00FF 66.6%, #FF0000 100%);
     opacity: 0.8;
 }
 
@@ -279,6 +281,7 @@ header .side-nav {
 
 nav {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 7px 10px 0 rgba(0, 0, 0, 0.12);
+    color: #000;
 }
 
 header .nav-transparent {
@@ -367,6 +370,7 @@ header .side-nav .social-link {
     font-size: 1.2rem;
     display: inline;
     padding: 0 12px;
+
 }
 
 .cover-btns {
@@ -542,6 +546,7 @@ header .go-back i {
     background-position: center center;
     background-size: cover;
     transform: translate3d(0px, 0px, 0px);
+
 }
 
 .index-cover {
@@ -595,7 +600,7 @@ header .go-back i {
     font-weight: 400;
 }
 
-@-webkit-keyframes rainbow {
+/*@-webkit-keyframes rainbow {
 
     0%,
     100% {
@@ -685,7 +690,7 @@ header .go-back i {
         background: -moz-linear-gradient(135deg, rgba(233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
         background: -webkit-linear-gradient(135deg, rgba(2233, 30, 99, 0.75) 0%, rgba(233, 30, 99, 0.65) 100%);
     }
-}
+}*/
 
 .index-card {
     margin-top: -10px;
