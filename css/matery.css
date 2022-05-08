@@ -242,8 +242,10 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right,  #00FFFF  0%,  yellow 100%);
-    /*opacity: 0.8;*/
+    background-image: linear-gradient(to left,  pink  0%,  skyblue 100%);
+/*
+    opacity: 0.9;*/
+
     
 }
 
@@ -261,7 +263,7 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #FFFF00 0%, #00FFFF 33.3%, #8B00FF 66.6%, #FF0000 100%);
+    background: linear-gradient(to left, pink  0%,  skyblue 100%);
     opacity: 0.8;
 }
 
