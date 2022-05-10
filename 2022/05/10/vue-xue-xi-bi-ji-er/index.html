@@ -355,8 +355,8 @@ npm run dev<span aria-hidden="true" class="line-numbers-rows"><span></span><span
 
 <p>梳理项目的结构</p>
 <p>使用 vite 创建的项目结构如下：</p>
-<p><img src="/images/Vue学习笔记(二)/vite1.png" style="zoom:50%;"><img src="/images/Vue学习笔记(二)/vite2.png" style="zoom:50%;"></p>
-<p> node_modules 目录用来存放第三方依赖包                     public 是公共的静态资源目录 </p>
+<p>   <img src="/images/Vue%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0(%E4%BA%8C)/vite.png"></p>
+<p> node_modules 目录用来存放第三方依赖包                                     public 是公共的静态资源目录 </p>
 <p> src 是项目的源代码目录（程序员写的所有代码都要放在此目录下）                .gitignore 是 Git 的忽略文件 </p>
 <p>index.html 是 SPA 单页面应用程序中唯一的 HTML 页面                   package.json 是项目的包管理配置文件</p>
 <p>在 src 这个项目源代码目录之下，包含了如下的文件和文件夹：</p>
@@ -373,27 +373,24 @@ npm run dev<span aria-hidden="true" class="line-numbers-rows"><span></span><span
 <p>每个 .vue 组件都由 3 部分构成，分别是：  </p>
 <p>template -&gt; 组件的模板结构                  script -&gt; 组件的 JavaScript 行为                      style -&gt; 组件的样式</p>
 <p>其中，每个组件中必须包含 template 模板结构，而 script 行为和 style 样式是可选的组成部分。</p>
-<pre class="line-numbers language-none"><code class="language-none">每个组件对应的模板结构，需要定义到 &lt;template&gt; 节点中。
-&lt;template&gt; 是 vue 提供的容器标签，只起到包裹性质的作用，它不会被渲染为真正的 DOM 元素。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-
-<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token comment">&lt;!--每个组件对应的模板结构，需要定义到 &lt;template> 节点中。
+&lt;template> 是 vue 提供的容器标签，只起到包裹性质的作用，它不会被渲染为真正的 DOM 元素。--></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>这是 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span><span class="token punctuation">></span></span>App.vue<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">></span></span> 根组件<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span> <span class="token punctuation">/></span></span>
    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span><span class="token punctuation">></span></span>abc --- &#123;&#123; username &#125;&#125;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span> <span class="token punctuation">/></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>count值是：&#123;&#123; count &#125;&#125;<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>addCount<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>+1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span> 
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<pre class="line-numbers language-none"><code class="language-none">在 &lt;script&gt; 节点中封装组件的 JavaScript 业务逻辑<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token comment">&lt;!--在 &lt;script> 节点中封装组件的 JavaScript 业务逻辑--></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span><span class="token script"><span class="token language-javascript">
 <span class="token keyword">export</span> <span class="token keyword">default</span><span class="token punctuation">&#123;</span>    
   <span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">'MyApp'</span><span class="token punctuation">,</span>   <span class="token comment">//组件名称</span>
   <span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">&#123;</span>      <span class="token comment">//组件数据</span>
-    <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>                                 <span class="token comment">//组件相关的数据、方法都需要定义到 </span>
-                                             <span class="token comment">//export default 所导出的对象中</span>
+    <span class="token keyword">return</span> <span class="token punctuation">&#123;</span>                                 <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span>组件相关的数据、方法都需要定义到 
+                                             <span class="token comment">//export default 所导出的对象中--></span>
       <span class="token literal-property property">count</span><span class="token operator">:</span><span class="token number">0</span>
     <span class="token punctuation">&#125;</span>
   <span class="token punctuation">&#125;</span><span class="token punctuation">,</span>
@@ -404,19 +401,16 @@ npm run dev<span aria-hidden="true" class="line-numbers-rows"><span></span><span
   <span class="token punctuation">&#125;</span>
   
 <span class="token punctuation">&#125;</span>  
-</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<pre class="line-numbers language-none"><code class="language-none">在 &lt;style&gt; 节点中编写样式美化当前组件的 UI 结构
+<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token comment">&lt;!--在 &lt;style> 节点中编写样式美化当前组件的 UI 结构
 
-其中 &lt;style&gt; 标签上的 lang&#x3D;&quot;css&quot; 属性是可选的，它表示所使用的样式语言。默认只支持普通的 css 语法，可 选值还有 less、scss 等。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-
-
-<pre class="line-numbers language-markup" data-language="markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>css<span class="token punctuation">'</span></span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
+其中 &lt;style> 标签上的 lang="css" 属性是可选的，它表示所使用的样式语言。默认只支持普通的 css 语法，可 选值还有 less、scss 等。--></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">'</span>css<span class="token punctuation">'</span></span><span class="token punctuation">></span></span><span class="token style"><span class="token language-css">
   <span class="token selector">h1</span><span class="token punctuation">&#123;</span>
     <span class="token property">font-weight</span><span class="token punctuation">:</span> normal<span class="token punctuation">;</span>
   <span class="token punctuation">&#125;</span>
-</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p><strong>组件的基本使用</strong></p>
 <p>组件之间可以进行相互的引用，vue 中组件的引用原则：先注册后使用。</p>
