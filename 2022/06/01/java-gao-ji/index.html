@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="明天会更好       吗？, Jiang&#39;s blog">
-    <meta name="description" content="疫情之下，我们的未来将何去何从">
+    <meta name="keywords" content="java进阶-学习笔记(一), Jiang&#39;s blog">
+    <meta name="description" content="集合框架和泛型">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +19,7 @@
 
     
 
-    <title>明天会更好       吗？ | Jiang&#39;s blog</title>
+    <title>java进阶-学习笔记(一) | Jiang&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -246,12 +246,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">明天会更好       吗？</h1>
+                    <h1 class="description center-align post-title">java进阶-学习笔记(一)</h1>
                 </div>
             </div>
         </div>
@@ -273,12 +273,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%8E%86%E5%8F%B2/">
-                                <span class="chip bg-color">历史</span>
-                            </a>
-                        
-                            <a href="/tags/%E6%97%B6%E6%94%BF/">
-                                <span class="chip bg-color">时政</span>
+                            <a href="/tags/java/">
+                                <span class="chip bg-color">java</span>
                             </a>
                         
                     </div>
@@ -289,8 +285,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/%E6%9D%82%E8%B0%88/" class="post-category">
-                                杂谈
+                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
+                                技术
                             </a>
                         
                     </div>
@@ -302,21 +298,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-05-07
+                    2022-06-01
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-05-07
+                    2022-06-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.3k
+                    1.5k
                 </div>
                 
 
@@ -341,13 +337,131 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>一、现状<br>易中天有言“现状不可描述“，那我冒着风险简单描述一下。<br>房地产：头部企业接连债务违约，房价开始下跌，成交量萎靡，人均房产面积数量是发达国家的几倍，法拍房数量指数增加。<br>制造业：本来就没有核心技术，赚个加工费。现在海外订单大量转移到东南亚印度。同时原料成本暴增，侵蚀现金流，挤压利润空间。<br>物流：2021年商用车销量低迷，车辆金融大面积违约。现在全国大量高速路口关闭，城市之间层层关卡，高速出口24小时大堵车。<br>餐饮类服务业：为底层劳动力提供大量工作岗位的餐饮服务业，疫情管控的城市不能堂食或者不能营业，大量开除员工，一个月的租金可能会亏完一年的利润。<br>教培行业：曾经为大学生提供巨量工作岗位的行业，现状你懂的。<br>旅游业：你懂的。<br>互联网：美股暴跌，退市风险、严卡上市导致融资渠道收紧，没钱可烧了。同时互联网技术应用成熟，产品内卷，审查趋严。<br>消费电子行业：以手机为例，人均换机时间曾长，红米等平价机型销量上升。<br>建筑施工：房建项目萎缩，账期在原有基础上进一步增加，基建项目政策不清晰，两者都受疫情管控影响，开工率低。<br>能源、原料：石油价格十年新高，带动其他原材料价格暴涨。<br>农牧渔业：受外国战争影响，粮食化肥价格暴涨，受疫情管控影响，生鲜蔬菜价格上涨，物流受限导致销量降低。<br>人口：增长数量创新低，今年可能负增长。</p>
-<p>二、未来（个人预测）<br>一线城市外，房价下跌，断供现象常见。<br>海外订单转移，产业链头部外企撤离，国内工厂内卷，厂多单少。<br>银行坏账增加，贷款审批更加严格。<br>至少一年内疫情反复，管控政策无法解除。<br>新增人口数量进一步降低，进入负增长时代。<br>学生越来越少，学校和教师数量过剩。<br>科研：国际关系恶化可能导致科研合作停止，海外发文章越来越难。<br>工业品价格上涨，受物流影响，短期内江浙沪的超市可能会出现部分产品缺货现象。</p>
-<p>三、建议<br>不要贷款或者借钱买房。<br>多囤积，囤积物资、金钱或者发展机会，例如多学习其他行业的技能。<br>慎重跳槽，不要创业，减少投资，有条件的话尽量考公务员或者事业单位。<br>少生娃。<br>关爱身边人，为自己利益考量的时候尽量不要损害别人的利益，无法对他人苦难感同身受的时候，尽量不要指责他人矫情、装抑郁、甚至是给境外势力递刀子。<br>学习了解基本求生技能。<br>秩序崩塌的时候，紧急时刻，回归野蛮。</p>
-<p>四、逼逼叨环节<br>作为90后，我生长在经济高速增长的年代，潜意识里觉得这个世界就应该这样子，社会越来越发达，父母的工资越来越高，所有人的生活越来越好。<br>改革开放如火如荼的时候，没有人会想起，苏联和朝鲜也曾经是工业国家，曾经有过良好的物质生活条件。<br>家长们都是认为孩子努力就能考上大学，考上大学就有体面的工作，就能在大城市扎根生活，成为城里人。<br>我们上学读书的时候，总感觉天生我材必有用，无论从前什么行业，将来都能出人头地，大学毕业才知道什么是“生化环材”天坑专业，土木机械这种曾经挤破头的专业也成了劝退专业。<br>以前总是习惯了房价上涨，期待着自己有朝一日也借钱上车，坐享一年增值几十万的时代红利。<br>无法想象经济负增长的世界，就像无法想象手机摄像头像素、屏幕分辨率停滞增长。</p>
-<p><strong>我对未来仍然有信心</strong>，但是至少两三年内，大家日子都不会很好过。就好像曾经的下岗潮，不影响历史的车轮滚滚前行，但是给无数人留下了苦涩的记忆，也有人撑不下去死在寒冬里。</p>
-<p>如果运气好的话，一年后所有上述不利情况都有所缓解，然后百废俱兴。<br>如果运气不好，可能要10年后从头再来。<br>时代的一粒微尘，落到一个人的头上就是一座大山。<br>很不幸，我们赶上了。<br>很幸运，我们现在赶上了，不是十年前不是十年后，我们如今年轻力壮，抗得住一些磨难。</p>
-<p>我们已经一只脚迈进了“乱纪元”。</p>
+                <p>  <strong>集合框架和泛型</strong>  </p>
+<p>如果并不知道程序运行时会需要多少对象，或者需要更复杂方式存储对象——可以使用Java集合框架</p>
+<p>Java集合框架提供了一套性能优良、使用方便的接口和类，它们位于java.util包中</p>
+<img src="../images/java高级/图片 1.png" alt="图片 1" style="zoom:50%;">
+
+<p>Collection 接口存储一组不唯一，无序的对象</p>
+<p>List 接口存储一组不唯一，有序（插入顺序）的对象</p>
+<p>Set 接口存储一组唯一，无序的对象 </p>
+<p>Map接口存储一组键值对象，提供key到 value    的映射  </p>
+<p>ArrayList实现了长度可变的数组，在内存中分配连续的空间，遍历元素和随机访问元素的效率比较高</p>
+<p>LinkedList采用链表存储方式，插入、删除元素时效率比较高  </p>
+<p>  <strong>ArrayList特点</strong>  </p>
+<p>ArrayList类是List接口的一个具体实现类</p>
+<p>ArrayList对象实现了可变大小的数组</p>
+<p>随机访问和遍历元素时，它提供更好的性能</p>
+<p>ArrayList集合中可以添加任何类型的数据，并且添加的数据都将转换成Object类型。</p>
+<p>  <strong>ArrayList常用方法</strong>  </p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">boolean</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token class-name">Object</span> o<span class="token punctuation">)</span>   在列表的末尾顺序添加元素，起始索引位置从<span class="token number">0</span>开始
+<span class="token keyword">void</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token keyword">int</span> index<span class="token punctuation">,</span><span class="token class-name">Object</span> o<span class="token punctuation">)</span>   在指定的索引位置添加元素。索引位置必须介于<span class="token number">0</span>和列表中元素个数之间
+<span class="token keyword">int</span> <span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span>  返回列表中的元素个数
+<span class="token class-name">Object</span> <span class="token function">get</span><span class="token punctuation">(</span><span class="token keyword">int</span> index<span class="token punctuation">)</span>  返回指定索引位置处的元素。取出的元素是<span class="token class-name">Object</span>类型，使用前需要进行强制类型转换
+<span class="token keyword">boolean</span> <span class="token function">contains</span><span class="token punctuation">(</span><span class="token class-name">Object</span> o<span class="token punctuation">)</span>  判断列表中是否存在指定元素
+<span class="token keyword">boolean</span> <span class="token function">remove</span><span class="token punctuation">(</span><span class="token class-name">Object</span> o<span class="token punctuation">)</span>  从列表中删除元素
+<span class="token class-name">Object</span> <span class="token function">remove</span><span class="token punctuation">(</span><span class="token keyword">int</span> index<span class="token punctuation">)</span> 从列表中删除指定位置元素，起始索引位置从<span class="token number">0</span>开始
+
+<span class="token class-name">Collection</span>接口常用通用方法还有：<span class="token function">clear</span><span class="token punctuation">(</span><span class="token punctuation">)</span>、<span class="token function">isEmpty</span><span class="token punctuation">(</span><span class="token punctuation">)</span>、<span class="token function">iterator</span><span class="token punctuation">(</span><span class="token punctuation">)</span>、<span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>  <strong>LinkedList常用方法</strong>  </p>
+<p>除了具有ArrayList对象的所有方法外，还增加了以下方法：</p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token keyword">void</span>  <span class="token function">addFirst</span><span class="token punctuation">(</span><span class="token class-name">Object</span> o<span class="token punctuation">)</span>  在列表的首部添加元素
+<span class="token keyword">void</span>  <span class="token function">addLast</span><span class="token punctuation">(</span><span class="token class-name">Object</span> o<span class="token punctuation">)</span>  在列表的末尾添加元素
+<span class="token class-name">Object</span>  <span class="token function">getFirst</span><span class="token punctuation">(</span><span class="token punctuation">)</span>       返回列表中的第一个元素
+<span class="token class-name">Object</span>  <span class="token function">getLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span>        返回列表中的最后一个元素
+<span class="token class-name">Object</span>  <span class="token function">removeFirst</span><span class="token punctuation">(</span><span class="token punctuation">)</span>    删除并返回列表中的第一个元素
+<span class="token class-name">Object</span>  <span class="token function">removeLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span>     删除并返回列表中的最后一个元素<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>  <strong>Set接口</strong>  </p>
+<p>Set接口存储一组唯一，无序的对象，不能保存重复对象</p>
+<p>​    HashSet是Set接口常用的实现类    </p>
+<p>Set中存放对象的引用  </p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">Set</span> set<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">HashSet</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">String</span> s1<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span><span class="token string">"java"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">String</span> s2<span class="token operator">=</span>s1<span class="token punctuation">;</span>
+<span class="token class-name">String</span> s3<span class="token operator">=</span><span class="token keyword">new</span> <span class="token class-name">String</span><span class="token punctuation">(</span><span class="token string">"JAVA"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>s1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>s2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>s3<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>set<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<img src="../images/java高级/图片 3.png" alt="图片 3" style="zoom:50%;">
+
+<p>采用对象的equals()方法比较两个对象是否相等</p>
+<p>  <strong>迭代器Iterator</strong>  </p>
+<p>​    如何遍历Set集合呢？    </p>
+<p>  方法    1    ：通过迭代器    Iterator    实现遍历  </p>
+<p>获取Iterator ：Collection 接口的iterator()方法</p>
+<p><strong>Iterator的方法</strong></p>
+<p>boolean hasNext(): 判断是否存在另一个可访问的元素 </p>
+<p>Object next(): 返回要访问的下一个元素</p>
+<p>  方法    2    ：增强型    for    循环  </p>
+<p>  <strong>Map接口</strong>  </p>
+<p>存储一组成对的键-值对象，提供key到value的影视</p>
+<p>key-value不能重复</p>
+<p>key不要求有序，但不允许重复</p>
+<p>value不要求有序，但允许重复</p>
+<p>  <strong>Map接口常用方法</strong>  </p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token class-name">Object</span> <span class="token function">put</span><span class="token punctuation">(</span><span class="token class-name">Object</span> key<span class="token punctuation">,</span> <span class="token class-name">Object</span> val<span class="token punctuation">)</span>      以“键<span class="token operator">-</span>值”对的方式进行存储
+<span class="token class-name">Object</span> <span class="token function">get</span><span class="token punctuation">(</span><span class="token class-name">Object</span> key<span class="token punctuation">)</span>          根据键返回相关联的值，如果不存在指定的键，返回<span class="token keyword">null</span>
+<span class="token class-name">Object</span> <span class="token function">remove</span><span class="token punctuation">(</span><span class="token class-name">Object</span> key<span class="token punctuation">)</span>       删除由指定的键映射的“键<span class="token operator">-</span>值对”
+<span class="token keyword">int</span> <span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span>                      返回元素个数
+<span class="token class-name">Set</span> <span class="token function">keySet</span><span class="token punctuation">(</span><span class="token punctuation">)</span>                   返回键的集合
+<span class="token class-name">Collection</span> <span class="token function">values</span><span class="token punctuation">(</span><span class="token punctuation">)</span>            返回值的集合
+<span class="token keyword">boolean</span> <span class="token function">containsKey</span><span class="token punctuation">(</span><span class="token class-name">Object</span> key<span class="token punctuation">)</span>    如果存在由指定的键映射的“键<span class="token operator">-</span>值对”，返回<span class="token boolean">true</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>  <strong>遍历Map集合</strong>  </p>
+<p>  方法1：通过迭代器Iterator实现遍历  </p>
+<p>  方法    2 ：增强型    for    循环  </p>
+<p>  方法    3    ：键值对  </p>
+<p>  <strong>Collections算法类</strong>  </p>
+<p>  Java    集合框架将针对不同数据结构算法的实现都保存在工具类中  </p>
+<p>  Collections    类定义了一系列用于操作集合的静态方法  </p>
+<p>  <strong>Collections类常用方法</strong>  </p>
+<p>  Collections和Collection不同，前者是集合的操作类，后者是集合接口  </p>
+<p>  Collections    提供的常用静态方法  </p>
+<p>sort():排序</p>
+<p>binarySearch()：查找</p>
+<p>max()\min():查找最大\最小值</p>
+<p>fill():将List集合中的所有元素替换为相同的元素</p>
+<p>  Collections排序  </p>
+<p>  Collections    类可以对集合进行排序、查找和替换操作  </p>
+<p>  实现一个类的对象之间比较大小，该类要实现    Comparable    接口  </p>
+<p>重写compareTo()方法</p>
+<p>  <strong>泛型集合</strong>  </p>
+<p>  如何解决以下强制类型转换时容易出现的异常问题  </p>
+<p>List的get(int index)方法获取元素</p>
+<p>Map的get(Object key)方法获取元素</p>
+<p>Iterator的next()方法获取元素</p>
+<p>  通过泛型  </p>
+<p>JDK5.0使用泛型改写了集合框架中的所有接口和类</p>
+<p>  <strong>泛型</strong>  </p>
+<p>  将对象的类型作为参数，指定到其他类或者方法上，从而保证类型转换的安全性和稳定性  </p>
+<p>本质是参数化类型</p>
+<p>  阅读如下代码，思考运行  </p>
+<pre class="line-numbers language-java" data-language="java"><code class="language-java"><span class="token comment">//创建学员集合</span>
+<span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Student</span><span class="token punctuation">></span></span> students <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ArrayList</span><span class="token generics"><span class="token punctuation">&lt;</span><span class="token class-name">Student</span><span class="token punctuation">></span></span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//创建学员类对象</span>
+<span class="token class-name">Student</span> student <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Student</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//创建诗类对象</span>
+<span class="token class-name">Poem</span> poem <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Poem</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//将两个对象添加到list集合中</span>
+students<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>student<span class="token punctuation">)</span><span class="token punctuation">;</span>  由于创建时已指定<span class="token class-name">Student</span>类型，所以这里会报错
+students<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>poem<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>  泛型集合可以约束集合内的元素类型  </p>
+<p>  典型泛型集合    ArrayList    <E>    、    HashMap    &lt;K,V&gt;  </E></p>
+<p><E>、&lt;K,V&gt;表示该泛型集合中的元素类型</E></p>
+<p>泛型集合中的数据不再转换为Object</p>
+<p>  Java    引入泛型的好处是安全简单，且所有强制转换都是自动和隐式进行的  </p>
+<p>  <strong>深入泛型    ——    泛型类</strong>  </p>
+<p>  将泛型的本质是参数化    类型，参数化类型的重要性在于允许创建一些类、接口和方法，其所操作的数据类型被定义为参数，可以在真正使用时指定具体的类型。  </p>
+<p>  <strong>两个概念：</strong>  </p>
+<p>参数化类型：参数化类型包含一个类或接口，以及实际的类型参数列表</p>
+<p>类型变量：是一种非限定性标识符，用来指定类、接口或者方法的类型</p>
 
                 
             </div>
@@ -364,7 +478,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">佚名</a>
+                    <a href="/about" rel="external nofollow noreferrer">jiang</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -374,7 +488,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://blog.stjiang.top/2022/05/07/ming-tian-hui-geng-hao-ma/">https://blog.stjiang.top/2022/05/07/ming-tian-hui-geng-hao-ma/</a>
+                    <a href="https://blog.stjiang.top/2022/06/01/java-gao-ji/">https://blog.stjiang.top/2022/06/01/java-gao-ji/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -387,7 +501,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">佚名</a>
+                    <a href="/about" target="_blank">jiang</a>
                     !
                 </span>
             </div>
@@ -412,12 +526,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%8E%86%E5%8F%B2/">
-                                    <span class="chip bg-color">历史</span>
-                                </a>
-                            
-                                <a href="/tags/%E6%97%B6%E6%94%BF/">
-                                    <span class="chip bg-color">时政</span>
+                                <a href="/tags/java/">
+                                    <span class="chip bg-color">java</span>
                                 </a>
                             
                         </div>
@@ -735,48 +845,32 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/05/09/vue-xue-xi-bi-ji-yi/">
+                <a href="/2022/06/01/shu-ru-shu-chu-chu-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="vue学习笔记(一)">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">vue学习笔记(一)</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            vue简介、基本使用、指令、组件
+                            
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-09
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-01
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%8A%80%E6%9C%AF/" class="post-category">
-                                    技术
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Jiang
                             
                         </span>
                     </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/vue/">
-                        <span class="chip bg-color">vue</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
-                        <span class="chip bg-color">前端</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -785,50 +879,49 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/05/07/ming-tian-hui-geng-hao-ma/">
+                <a href="/2022/05/19/python3-ji-qi-xue-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="明天会更好       吗？">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="python3入门机器学习">
                         
-                        <span class="card-title">明天会更好       吗？</span>
+                        <span class="card-title">python3入门机器学习</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            疫情之下，我们的未来将何去何从
+                            个人学习使用，原课程已下架，网络资源，侵删
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-07
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-19
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%9D%82%E8%B0%88/" class="post-category">
-                                    杂谈
+                            <a href="/categories/%E8%B5%84%E6%BA%90/" class="post-category">
+                                    资源
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%8E%86%E5%8F%B2/">
-                        <span class="chip bg-color">历史</span>
+                    <a href="/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">机器学习</span>
                     </a>
                     
-                    <a href="/tags/%E6%97%B6%E6%94%BF/">
-                        <span class="chip bg-color">时政</span>
+                    <a href="/tags/python/">
+                        <span class="chip bg-color">python</span>
                     </a>
                     
                 </div>

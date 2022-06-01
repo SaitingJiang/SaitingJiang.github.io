@@ -4,8 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="明天会更好       吗？, Jiang&#39;s blog">
-    <meta name="description" content="疫情之下，我们的未来将何去何从">
+    <meta name="keywords" content="Jiang&#39;s blog">
+    <meta name="description" content="输入输出处理
+u什么是文件？
+n相关记录或放在一起的数据的集合
+uJava****程序如何访问文件属性？
+nJAVA API ：java.io.File 类
+File file &amp;#x3D; new File( String pathnam">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +24,7 @@
 
     
 
-    <title>明天会更好       吗？ | Jiang&#39;s blog</title>
+    <title>Jiang&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -246,12 +251,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/16.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">明天会更好       吗？</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -261,39 +266,116 @@
 
 
 
-<main class="container content">
+<main class="post-container content">
 
     
-    <!-- 文章内容详情 -->
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
 <div id="artDetail">
     <div class="card">
         <div class="card-content article-info">
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/%E5%8E%86%E5%8F%B2/">
-                                <span class="chip bg-color">历史</span>
-                            </a>
-                        
-                            <a href="/tags/%E6%97%B6%E6%94%BF/">
-                                <span class="chip bg-color">时政</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E6%9D%82%E8%B0%88/" class="post-category">
-                                杂谈
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -302,21 +384,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-05-07
+                    2022-06-01
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-05-07
+                    2022-06-01
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.3k
+                    955
                 </div>
                 
 
@@ -341,13 +423,129 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>一、现状<br>易中天有言“现状不可描述“，那我冒着风险简单描述一下。<br>房地产：头部企业接连债务违约，房价开始下跌，成交量萎靡，人均房产面积数量是发达国家的几倍，法拍房数量指数增加。<br>制造业：本来就没有核心技术，赚个加工费。现在海外订单大量转移到东南亚印度。同时原料成本暴增，侵蚀现金流，挤压利润空间。<br>物流：2021年商用车销量低迷，车辆金融大面积违约。现在全国大量高速路口关闭，城市之间层层关卡，高速出口24小时大堵车。<br>餐饮类服务业：为底层劳动力提供大量工作岗位的餐饮服务业，疫情管控的城市不能堂食或者不能营业，大量开除员工，一个月的租金可能会亏完一年的利润。<br>教培行业：曾经为大学生提供巨量工作岗位的行业，现状你懂的。<br>旅游业：你懂的。<br>互联网：美股暴跌，退市风险、严卡上市导致融资渠道收紧，没钱可烧了。同时互联网技术应用成熟，产品内卷，审查趋严。<br>消费电子行业：以手机为例，人均换机时间曾长，红米等平价机型销量上升。<br>建筑施工：房建项目萎缩，账期在原有基础上进一步增加，基建项目政策不清晰，两者都受疫情管控影响，开工率低。<br>能源、原料：石油价格十年新高，带动其他原材料价格暴涨。<br>农牧渔业：受外国战争影响，粮食化肥价格暴涨，受疫情管控影响，生鲜蔬菜价格上涨，物流受限导致销量降低。<br>人口：增长数量创新低，今年可能负增长。</p>
-<p>二、未来（个人预测）<br>一线城市外，房价下跌，断供现象常见。<br>海外订单转移，产业链头部外企撤离，国内工厂内卷，厂多单少。<br>银行坏账增加，贷款审批更加严格。<br>至少一年内疫情反复，管控政策无法解除。<br>新增人口数量进一步降低，进入负增长时代。<br>学生越来越少，学校和教师数量过剩。<br>科研：国际关系恶化可能导致科研合作停止，海外发文章越来越难。<br>工业品价格上涨，受物流影响，短期内江浙沪的超市可能会出现部分产品缺货现象。</p>
-<p>三、建议<br>不要贷款或者借钱买房。<br>多囤积，囤积物资、金钱或者发展机会，例如多学习其他行业的技能。<br>慎重跳槽，不要创业，减少投资，有条件的话尽量考公务员或者事业单位。<br>少生娃。<br>关爱身边人，为自己利益考量的时候尽量不要损害别人的利益，无法对他人苦难感同身受的时候，尽量不要指责他人矫情、装抑郁、甚至是给境外势力递刀子。<br>学习了解基本求生技能。<br>秩序崩塌的时候，紧急时刻，回归野蛮。</p>
-<p>四、逼逼叨环节<br>作为90后，我生长在经济高速增长的年代，潜意识里觉得这个世界就应该这样子，社会越来越发达，父母的工资越来越高，所有人的生活越来越好。<br>改革开放如火如荼的时候，没有人会想起，苏联和朝鲜也曾经是工业国家，曾经有过良好的物质生活条件。<br>家长们都是认为孩子努力就能考上大学，考上大学就有体面的工作，就能在大城市扎根生活，成为城里人。<br>我们上学读书的时候，总感觉天生我材必有用，无论从前什么行业，将来都能出人头地，大学毕业才知道什么是“生化环材”天坑专业，土木机械这种曾经挤破头的专业也成了劝退专业。<br>以前总是习惯了房价上涨，期待着自己有朝一日也借钱上车，坐享一年增值几十万的时代红利。<br>无法想象经济负增长的世界，就像无法想象手机摄像头像素、屏幕分辨率停滞增长。</p>
-<p><strong>我对未来仍然有信心</strong>，但是至少两三年内，大家日子都不会很好过。就好像曾经的下岗潮，不影响历史的车轮滚滚前行，但是给无数人留下了苦涩的记忆，也有人撑不下去死在寒冬里。</p>
-<p>如果运气好的话，一年后所有上述不利情况都有所缓解，然后百废俱兴。<br>如果运气不好，可能要10年后从头再来。<br>时代的一粒微尘，落到一个人的头上就是一座大山。<br>很不幸，我们赶上了。<br>很幸运，我们现在赶上了，不是十年前不是十年后，我们如今年轻力壮，抗得住一些磨难。</p>
-<p>我们已经一只脚迈进了“乱纪元”。</p>
+                <p><strong>输入输出处理</strong></p>
+<p>u<strong>什么是文件？</strong></p>
+<p>n相关记录或放在一起的数据的集合</p>
+<p>u<strong>Java****程序如何访问文件属性？</strong></p>
+<p>nJAVA API ：java.io.File 类</p>
+<p>File file &#x3D; new File( String pathname );</p>
+<pre class="line-numbers language-none"><code class="language-none">boolean exists( )
+判断文件或目录是否存在
+boolean isFile( )
+判断是否是文件
+boolean isDirectory( )
+判断是否是目录
+String getPath( )
+返回此对象表示的文件的相对路径名
+String getAbsolutePath( )
+返回此对象表示的文件的绝对路径名
+String getName( )
+返回此对象表示的文件或目录的名称
+boolean delete( )
+删除此对象指定的文件或目录
+boolean createNewFile( )
+创建名称的空文件，不创建文件夹
+long  length()
+返回文件的长度，单位为字节, 如果文件不存在，则返回 0L
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>u<strong>如何读写文件？</strong></p>
+<p>u</p>
+<p>u<strong>通过流来读写文件</strong></p>
+<p>n流是一组有序的数据序列</p>
+<p>n以先进先出方式发送信息的通道</p>
+<p>u<strong>Java****流的分类</strong></p>
+<p>pic4 5</p>
+<p><strong>输入输出流是相对于计算机内存来说的</strong></p>
+<p><strong>字节流是</strong> <strong>8</strong> <strong>位通用字节流，字符流是</strong> <strong>16</strong> <strong>位</strong> <strong>Unicode</strong> <strong>字符流</strong></p>
+<p><strong>FileInputStream</strong></p>
+<p>u<strong>InputStream****类常用方法</strong></p>
+<p>nint read( )</p>
+<p>nint read(byte[] b)</p>
+<p>nint read(byte[] b,int off,int len)</p>
+<p>nvoid close( )</p>
+<p>nint available()：可以从输入流中读取的字节数目</p>
+<p>u<strong>子类<strong><strong>FileInputStream</strong></strong>常用的构造方法</strong></p>
+<p>n FileInputStream(File file)</p>
+<p>nFileInputStream(String name) </p>
+<p><strong>使用FileInputStream 读文本文件</strong></p>
+<p>pic6</p>
+<p>u<strong>OutputStream****类常用方法</strong></p>
+<p>nvoid write(int c)</p>
+<p>nvoid write(byte[] buf)</p>
+<p>nvoid write(byte[] b,int off,int len)</p>
+<p>nvoid close()</p>
+<p>nvoid flush()：强制把缓冲区的数据写到输出流中</p>
+<p>u<strong>子类<strong><strong>FileOutputStream</strong></strong>常用的构造方法</strong></p>
+<p>nFileOutputStream (File file)</p>
+<p>nFileOutputStream(String name) </p>
+<p>nFileOutputStream(String name,boolean append)</p>
+<p><strong>1</strong>**.<strong><strong>前</strong></strong>两种构造方法在向文件写数据时将覆盖文件中原有的内容**</p>
+<p><strong>2</strong>**.<strong><strong>创建</strong></strong>FileOutputStream**<strong>实例时，如果相应的文件并不存在，则会自动创建一个空的文件</strong></p>
+<p><strong>使用FileOutputStream 写文本文件</strong></p>
+<p>Pic7</p>
+<p><strong>Reader类</strong></p>
+<p>u<strong>Reader****类常用方法</strong></p>
+<p>nint read( )</p>
+<p>nint read(char[] c)</p>
+<p>nread(char[] c,int off,int len)</p>
+<p>nvoid close( )</p>
+<p>u<strong>子类<strong><strong>InputStream</strong></strong>Reader****常用的构造方法</strong></p>
+<p>nInputStreamReader(InputStream in)</p>
+<p>nInputStreamReader(InputStream in,String charsetName)</p>
+<p><strong>FileReader类</strong></p>
+<p>u<strong>FileReader<strong><strong>类是</strong></strong>InputStream<strong><strong>Reader</strong></strong>的子类</strong></p>
+<p>nFileReader(File file)</p>
+<p>nFileReader(String name)</p>
+<p>u<strong>该类只能按照本地平台的字符编码来读取数据，用户不能指定其他的字符编码类型</strong></p>
+<p>nSystem.out.println(System.getProperty(“file.encoding”)); 获得本地平台的字符编码类型</p>
+<p><strong>使用FileReader读取文件</strong></p>
+<p>u<strong>与字节流<strong><strong>FileInputStream</strong></strong>类实现文本文件读取步骤类似</strong></p>
+<p>u<strong>如何提高字符流读取文本文件的效率？</strong></p>
+<p>n使用FileReader类与BufferedReader类</p>
+<p><strong>BufferedReader<strong><strong>类是</strong></strong>Reader****类的子类</strong></p>
+<p><strong>BufferedReader****类带有缓冲区</strong></p>
+<p>*<em>按行读取内容的</em>***readLine()**<strong>方法</strong></p>
+<p>u<strong>BufferedReader****常用的构造方法</strong></p>
+<p>nBufferedReader(Reader in)</p>
+<p>u<strong>子类<strong><strong>BufferedReader</strong></strong>特有的方法</strong></p>
+<p>n readLine()</p>
+<p><strong>使用 BufferedReader读文本文件</strong></p>
+<p>pic8</p>
+<p><strong>Writer类</strong></p>
+<p>u<strong>Writer****类常用方法</strong></p>
+<p>nwrite(String str)</p>
+<p>nwrite(String str,int off,int len)</p>
+<p>nvoid close()</p>
+<p>nvoid flush()</p>
+<p>u<strong>子类<strong><strong>OutputStream</strong></strong>Writer****常用的构造方法</strong></p>
+<p>nOutputStreamWriter(OutputStream out)</p>
+<p>nOutputStreamWriter(OutputStream out,String charsetName)</p>
+<p><strong>FileWriter类</strong></p>
+<p>u<strong>FileWriter<strong><strong>类是</strong></strong>OutputStream<strong><strong>Writer</strong></strong>的子类</strong></p>
+<p>nFileWriter (File file)</p>
+<p>nFileWriter (String name)</p>
+<p>u<strong>该类只能按照本地平台的字符编码来写数据，用户不能指定其他的字符编码类型</strong></p>
+<p><strong>使用FileWriter写文件</strong></p>
+<p>u<strong>与字节流<strong><strong>FileOutputStream</strong></strong>类实现向文本文件写入数据步骤类似</strong></p>
+<p>u<strong>如何提高字符流写文本文件的效率？</strong></p>
+<p>n使用FileWriter类与BufferedWriter类</p>
+<p><strong>BufferedWriter<strong><strong>类是</strong></strong>Writer****类的子类</strong></p>
+<p><strong>BufferedWriter****类带有缓冲区</strong></p>
+<p>u<strong>BufferedWriter****常用的构造方法</strong></p>
+<p>n BufferedWriter(Writer out)</p>
+<p><strong>使用 BufferedWriter写文件</strong></p>
+<p>Pic9</p>
+<p><strong>读写二进制文件</strong></p>
+<p>u<strong>DataInputStream****类</strong></p>
+<p>nFileInputStream的子类</p>
+<p>n与FileInputStream类结合使用读取二进制文件</p>
+<p>u<strong>DataOutputStream****类</strong></p>
+<p>nFileOutputStream的子类</p>
+<p>n与FileOutputStream类结合使用写二进制文件</p>
+<p><strong>使用 DataInputStream 读写二进制文件</strong></p>
+<p><strong>与字节流<strong><strong>FileInputStream</strong></strong>类实现文本文件读取步骤极其相似</strong></p>
+<p><strong>与字节流<strong><strong>FileOutputStream</strong></strong>类实现文本文件读取步骤极其相似</strong></p>
 
                 
             </div>
@@ -364,7 +562,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">佚名</a>
+                    <a href="/about" rel="external nofollow noreferrer">Jiang</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -374,7 +572,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://blog.stjiang.top/2022/05/07/ming-tian-hui-geng-hao-ma/">https://blog.stjiang.top/2022/05/07/ming-tian-hui-geng-hao-ma/</a>
+                    <a href="https://blog.stjiang.top/2022/06/01/shu-ru-shu-chu-chu-li/">https://blog.stjiang.top/2022/06/01/shu-ru-shu-chu-chu-li/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -387,7 +585,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">佚名</a>
+                    <a href="/about" target="_blank">Jiang</a>
                     !
                 </span>
             </div>
@@ -411,15 +609,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/%E5%8E%86%E5%8F%B2/">
-                                    <span class="chip bg-color">历史</span>
-                                </a>
-                            
-                                <a href="/tags/%E6%97%B6%E6%94%BF/">
-                                    <span class="chip bg-color">时政</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -731,29 +921,68 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/05/09/vue-xue-xi-bi-ji-yi/">
+                <a href="/2022/06/01/shu-ru-shu-chu-chu-li/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="vue学习笔记(一)">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">vue学习笔记(一)</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            vue简介、基本使用、指令、组件
+                            
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-09
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-01
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Jiang
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/06/01/java-gao-ji/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="java进阶-学习笔记(一)">
+                        
+                        <span class="card-title">java进阶-学习笔记(一)</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            集合框架和泛型
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-01
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -769,66 +998,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/vue/">
-                        <span class="chip bg-color">vue</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%89%8D%E7%AB%AF/">
-                        <span class="chip bg-color">前端</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/05/07/ming-tian-hui-geng-hao-ma/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="明天会更好       吗？">
-                        
-                        <span class="card-title">明天会更好       吗？</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            疫情之下，我们的未来将何去何从
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-07
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E6%9D%82%E8%B0%88/" class="post-category">
-                                    杂谈
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E5%8E%86%E5%8F%B2/">
-                        <span class="chip bg-color">历史</span>
-                    </a>
-                    
-                    <a href="/tags/%E6%97%B6%E6%94%BF/">
-                        <span class="chip bg-color">时政</span>
+                    <a href="/tags/java/">
+                        <span class="chip bg-color">java</span>
                     </a>
                     
                 </div>
@@ -860,6 +1031,87 @@
 
 <script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
 
     
 
